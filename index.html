@@ -279,6 +279,8 @@
   .hub-game b{color:var(--text); font-weight:600;}
   .lu-c{color:var(--pos); font-weight:600;} .lu-p{color:var(--gold); font-weight:600;}
   .hub-refresh{color:var(--teal);}
+  .hub-note{padding:10px 20px 0; font-size:12px; color:var(--text-dim);} .hub-note b{color:var(--gold);}
+  @media (max-width:640px){ .hub-note{padding:10px 12px 0;} }
   .tr-table{width:100%; border-collapse:collapse; font-size:13px; margin-top:12px;}
   .tr-table th,.tr-table td{padding:10px 8px; border-bottom:1px solid var(--line-soft); text-align:right;}
   .tr-table th{font-family:'Oswald',sans-serif; font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--text-dim);}
@@ -1319,13 +1321,31 @@ let hubMetaStamp = null;
 const HUB_ABBR = {"Arizona Diamondbacks":"ARI","Athletics":"ATH","Oakland Athletics":"ATH","Atlanta Braves":"ATL","Baltimore Orioles":"BAL","Boston Red Sox":"BOS","Chicago Cubs":"CHC","Chicago White Sox":"CWS","Cincinnati Reds":"CIN","Cleveland Guardians":"CLE","Colorado Rockies":"COL","Detroit Tigers":"DET","Houston Astros":"HOU","Kansas City Royals":"KC","Los Angeles Angels":"LAA","Los Angeles Dodgers":"LAD","Miami Marlins":"MIA","Milwaukee Brewers":"MIL","Minnesota Twins":"MIN","New York Mets":"NYM","New York Yankees":"NYY","Philadelphia Phillies":"PHI","Pittsburgh Pirates":"PIT","San Diego Padres":"SD","San Francisco Giants":"SF","Seattle Mariners":"SEA","St. Louis Cardinals":"STL","Tampa Bay Rays":"TB","Texas Rangers":"TEX","Toronto Blue Jays":"TOR","Washington Nationals":"WSH"};
 const TEAM_ABBR = n => HUB_ABBR[n] || (n||'').split(' ').slice(-1)[0];
 function hubLuTag(st){ return st === 'confirmed' ? '<span class="lu-c">✓ Confirmed</span>' : '<span class="lu-p">Projected</span>'; }
+function hubFmtET(iso, opts){ try{ return new Date(iso).toLocaleString('en-US', Object.assign({timeZone:'America/New_York'}, opts)); }catch(e){ return ''; } }
 function hubRenderGames(games){
   const el = document.getElementById('hub-games');
   el.innerHTML = (games||[]).map(g => {
     const [aw, hm] = (g.game||'').split(' @ ');
-    const t = g.start ? new Date(g.start).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'}) : '';
-    return `<div class="hub-game"><b>${hubEsc(TEAM_ABBR(aw))} @ ${hubEsc(TEAM_ABBR(hm))}</b> ${hubEsc(t)}<br>${hubEsc(TEAM_ABBR(aw))} ${hubLuTag(g.away_status)} · ${hubEsc(TEAM_ABBR(hm))} ${hubLuTag(g.home_status)}</div>`;
+    const when = g.start ? hubFmtET(g.start,{weekday:'short',month:'short',day:'numeric'}) + ' · ' + hubFmtET(g.start,{hour:'numeric',minute:'2-digit'}) + ' ET' : '';
+    const pit = (g.away_pitcher !== undefined || g.home_pitcher !== undefined)
+      ? `<br>SP: ${hubEsc(g.away_pitcher || 'Pitcher TBD')} vs ${hubEsc(g.home_pitcher || 'Pitcher TBD')}` : '';
+    const lab = g.label ? `<span class="hub-refresh">${hubEsc(g.label)}</span><br>` : '';
+    return `<div class="hub-game">${lab}<b>${hubEsc(TEAM_ABBR(aw))} @ ${hubEsc(TEAM_ABBR(hm))}</b> ${hubEsc(when)}${pit}<br>${hubEsc(TEAM_ABBR(aw))} ${hubLuTag(g.away_status)} · ${hubEsc(TEAM_ABBR(hm))} ${hubLuTag(g.home_status)}</div>`;
   }).join('');
+}
+function hubSlateNotice(m){
+  let n = document.getElementById('hub-slate-note');
+  if(!n){ n = document.createElement('div'); n.id = 'hub-slate-note'; n.className = 'hub-note';
+    document.getElementById('hub-games').insertAdjacentElement('beforebegin', n); }
+  const nd = m.slate_date ? hubFmtDate(m.slate_date) : '';
+  if(m.games && m.games.length && !m.rows_scored){
+    n.innerHTML = `<b>Next slate: ${hubEsc(nd)}</b> — picks post once probables and lineups are in.`;
+  } else if(m.preview){
+    n.innerHTML = `<b>Preview · ${hubEsc(nd)}</b> — scored on projected lineups; rescored on game day.`;
+  } else if(!(m.games||[]).length){
+    n.innerHTML = 'No upcoming MLB games in the next 7 days.';
+  } else { n.innerHTML = ''; }
+  n.style.display = n.innerHTML ? '' : 'none';
 }
 function hubGamesFromRows(rows){
   const m = {};
@@ -1336,11 +1356,13 @@ function hubGamesFromRows(rows){
 }
 function hubRenderMeta(m){
   const el = document.getElementById('hub-updated');
-  let t = 'Slate: <b>' + hubEsc(hubFmtDate(m.slate_date || '')) + '</b>';
+  let t = (m.preview ? 'Next slate: <b>' : 'Slate: <b>') + hubEsc(hubFmtDate(m.slate_date || '')) + '</b>';
   if(m.updated_at){ t += '<br>Updated ' + hubEsc(new Date(m.updated_at).toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'})); }
   if(m.lineups_checked_at){ t += '<br>Lineups checked ' + hubEsc(new Date(m.lineups_checked_at).toLocaleTimeString(undefined,{hour:'numeric',minute:'2-digit'})); }
   el.innerHTML = t;
   hubRenderGames(m.games && m.games.length ? m.games : hubGamesFromRows(zdData || []));
+  hubSlateNotice(m);
+  if(!m.rows_scored){ document.getElementById('zd-filecount').textContent = 'Next slate not scored yet'; }
 }
 function hubLoadMeta(initial){
   return fetch('data/meta.json?t=' + Date.now(), {cache:'no-store'}).then(r => { if(!r.ok) throw 0; return r.json(); }).then(m => {
