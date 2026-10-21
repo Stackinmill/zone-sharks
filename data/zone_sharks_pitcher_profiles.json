@@ -1,0 +1,155 @@
+[
+  {
+    "pitcher": "Tarik Skubal",
+    "days": 730,
+    "pitch_types_used": [
+      "FF",
+      "CH",
+      "SI",
+      "SL"
+    ],
+    "current_season_mix": {
+      "FF": 36.5,
+      "CH": 24.8,
+      "SI": 19.8,
+      "SL": 14.3,
+      "CU": 4.6
+    },
+    "vs_LHB": {
+      "n_pitches": 1196,
+      "zones": {
+        "1": {
+          "ev": 89.9,
+          "barrel_pct": 20.0,
+          "iso": 0.15,
+          "n_pitches": 59,
+          "usage_pct": 4.9
+        },
+        "2": {
+          "ev": 90.0,
+          "barrel_pct": 7.1,
+          "iso": 0.263,
+          "n_pitches": 77,
+          "usage_pct": 6.4
+        },
+        "3": {
+          "ev": 80.3,
+          "barrel_pct": 16.7,
+          "iso": 0.462,
+          "n_pitches": 58,
+          "usage_pct": 4.8
+        },
+        "4": {
+          "ev": 86.9,
+          "barrel_pct": 4.3,
+          "iso": 0.029,
+          "n_pitches": 98,
+          "usage_pct": 8.2
+        },
+        "5": {
+          "ev": 91.7,
+          "barrel_pct": 8.5,
+          "iso": 0.08,
+          "n_pitches": 116,
+          "usage_pct": 9.7
+        },
+        "6": {
+          "ev": 80.3,
+          "barrel_pct": 0.0,
+          "iso": 0.026,
+          "n_pitches": 94,
+          "usage_pct": 7.9
+        },
+        "7": {
+          "ev": 88.1,
+          "barrel_pct": 0.0,
+          "iso": 0.036,
+          "n_pitches": 84,
+          "usage_pct": 7.0
+        },
+        "8": {
+          "ev": 94.1,
+          "barrel_pct": 0.0,
+          "iso": 0.029,
+          "n_pitches": 95,
+          "usage_pct": 7.9
+        },
+        "9": {
+          "ev": 90.1,
+          "barrel_pct": 14.3,
+          "iso": 0.143,
+          "n_pitches": 51,
+          "usage_pct": 4.3
+        }
+      }
+    },
+    "vs_RHB": {
+      "n_pitches": 4672,
+      "zones": {
+        "1": {
+          "ev": 76.8,
+          "barrel_pct": 0.0,
+          "iso": 0.065,
+          "n_pitches": 234,
+          "usage_pct": 5.0
+        },
+        "2": {
+          "ev": 91.3,
+          "barrel_pct": 12.5,
+          "iso": 0.25,
+          "n_pitches": 309,
+          "usage_pct": 6.6
+        },
+        "3": {
+          "ev": 94.2,
+          "barrel_pct": 11.1,
+          "iso": 0.06,
+          "n_pitches": 223,
+          "usage_pct": 4.8
+        },
+        "4": {
+          "ev": 86.7,
+          "barrel_pct": 8.8,
+          "iso": 0.182,
+          "n_pitches": 249,
+          "usage_pct": 5.3
+        },
+        "5": {
+          "ev": 94.5,
+          "barrel_pct": 19.3,
+          "iso": 0.307,
+          "n_pitches": 364,
+          "usage_pct": 7.8
+        },
+        "6": {
+          "ev": 88.1,
+          "barrel_pct": 9.6,
+          "iso": 0.115,
+          "n_pitches": 316,
+          "usage_pct": 6.8
+        },
+        "7": {
+          "ev": 88.2,
+          "barrel_pct": 0.0,
+          "iso": 0.061,
+          "n_pitches": 169,
+          "usage_pct": 3.6
+        },
+        "8": {
+          "ev": 90.2,
+          "barrel_pct": 4.9,
+          "iso": 0.113,
+          "n_pitches": 280,
+          "usage_pct": 6.0
+        },
+        "9": {
+          "ev": 83.5,
+          "barrel_pct": 5.2,
+          "iso": 0.088,
+          "n_pitches": 249,
+          "usage_pct": 5.3
+        }
+      }
+    }
+  }
+]
