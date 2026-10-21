@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-21T22:42:34+00:00",
+  "generated_at": "2026-10-21T22:45:28+00:00",
   "start_date": "2026-08-03",
-  "end_date": "2026-10-05",
+  "end_date": "2026-10-23",
   "graded_through": "2026-10-05",
   "tiers": [
     {
@@ -13,21 +13,21 @@
     },
     {
       "tier": "Great White",
-      "total_picks": 306,
+      "total_picks": 308,
       "matchups_occurred": 246,
       "had_hr": 28,
       "hit_predicted_band": 17
     },
     {
       "tier": "Hammerhead",
-      "total_picks": 2446,
+      "total_picks": 2448,
       "matchups_occurred": 1967,
       "had_hr": 198,
       "hit_predicted_band": 107
     },
     {
       "tier": "Secondary",
-      "total_picks": 9112,
+      "total_picks": 9121,
       "matchups_occurred": 6680,
       "had_hr": 471,
       "hit_predicted_band": 233
