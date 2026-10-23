@@ -1,17 +1,17 @@
 {
   "slate_date": "2026-10-23",
   "preview": false,
-  "rows_scored": 24,
-  "updated_at": "2026-10-23T20:02:52+00:00",
-  "lineups_checked_at": "2026-10-23T16:02:51-0400",
+  "rows_scored": 17,
+  "updated_at": "2026-10-23T20:36:45+00:00",
+  "lineups_checked_at": "2026-10-23T16:36:32-0400",
   "games": [
     {
       "game_pk": "849805",
       "game": "Tampa Bay Rays @ Milwaukee Brewers",
       "start": "2026-10-24T00:00:00Z",
       "state": "Preview",
-      "away_status": "projected",
-      "home_status": "projected",
+      "away_status": "confirmed",
+      "home_status": "confirmed",
       "away_pitcher": "Nick Martinez",
       "home_pitcher": "Jacob Misiorowski",
       "label": "World Series Game 1",
