@@ -1,9 +1,9 @@
 {
   "slate_date": "2026-10-24",
-  "preview": true,
+  "preview": false,
   "rows_scored": 25,
-  "updated_at": "2026-10-24T00:52:53+00:00",
-  "lineups_checked_at": "2026-10-23T20:52:53-0400",
+  "updated_at": "2026-10-24T14:23:42+00:00",
+  "lineups_checked_at": "2026-10-24T10:18:15-0400",
   "games": [
     {
       "game_pk": "849802",
