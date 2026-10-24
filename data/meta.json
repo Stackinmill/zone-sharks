@@ -1,20 +1,20 @@
 {
-  "slate_date": "2026-10-24",
-  "preview": false,
-  "rows_scored": 18,
-  "updated_at": "2026-10-24T23:28:55+00:00",
-  "lineups_checked_at": "2026-10-24T19:28:54-0400",
+  "slate_date": "2026-10-26",
+  "preview": true,
+  "rows_scored": 22,
+  "updated_at": "2026-10-24T23:56:38+00:00",
+  "lineups_checked_at": "2026-10-24T19:56:12-0400",
   "games": [
     {
-      "game_pk": "849802",
-      "game": "Tampa Bay Rays @ Milwaukee Brewers",
-      "start": "2026-10-25T00:00:00Z",
+      "game_pk": "849804",
+      "game": "Milwaukee Brewers @ Tampa Bay Rays",
+      "start": "2026-10-27T00:00:00Z",
       "state": "Preview",
-      "away_status": "confirmed",
-      "home_status": "confirmed",
-      "away_pitcher": "Drew Rasmussen",
-      "home_pitcher": "Logan Henderson",
-      "label": "World Series Game 2",
+      "away_status": "projected",
+      "home_status": "projected",
+      "away_pitcher": "Robert Gasser",
+      "home_pitcher": "Freddy Peralta",
+      "label": "World Series Game 3",
       "game_type": "W"
     }
   ]
