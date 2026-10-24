@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T19:56:58+00:00",
+  "generated_at": "2026-10-24T20:32:21+00:00",
   "start_date": "2026-08-03",
   "end_date": "2026-10-24",
   "graded_through": "2026-10-23",
@@ -20,14 +20,14 @@
     },
     {
       "tier": "Hammerhead",
-      "total_picks": 2460,
+      "total_picks": 2458,
       "matchups_occurred": 1972,
       "had_hr": 198,
       "hit_predicted_band": 107
     },
     {
       "tier": "Secondary",
-      "total_picks": 9136,
+      "total_picks": 9131,
       "matchups_occurred": 6689,
       "had_hr": 471,
       "hit_predicted_band": 233
