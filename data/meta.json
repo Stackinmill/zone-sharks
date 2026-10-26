@@ -1,17 +1,17 @@
 {
   "slate_date": "2026-10-26",
   "preview": false,
-  "rows_scored": 22,
-  "updated_at": "2026-10-26T19:58:02+00:00",
-  "lineups_checked_at": "2026-10-26T15:58:01-0400",
+  "rows_scored": 16,
+  "updated_at": "2026-10-26T20:38:52+00:00",
+  "lineups_checked_at": "2026-10-26T16:38:41-0400",
   "games": [
     {
       "game_pk": "849804",
       "game": "Milwaukee Brewers @ Tampa Bay Rays",
       "start": "2026-10-27T00:00:00Z",
       "state": "Preview",
-      "away_status": "projected",
-      "home_status": "projected",
+      "away_status": "confirmed",
+      "home_status": "confirmed",
       "away_pitcher": "Robert Gasser",
       "home_pitcher": "Freddy Peralta",
       "label": "World Series Game 3",
