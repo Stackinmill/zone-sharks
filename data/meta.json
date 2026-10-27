@@ -1,9 +1,9 @@
 {
   "slate_date": "2026-10-27",
-  "preview": true,
-  "rows_scored": 0,
-  "updated_at": "2026-10-27T01:16:27+00:00",
-  "lineups_checked_at": "2026-10-26T21:16:26-0400",
+  "preview": false,
+  "rows_scored": 13,
+  "updated_at": "2026-10-27T14:42:51+00:00",
+  "lineups_checked_at": "2026-10-27T10:40:17-0400",
   "games": [
     {
       "game_pk": "849803",
@@ -13,7 +13,7 @@
       "away_status": "projected",
       "home_status": "projected",
       "away_pitcher": null,
-      "home_pitcher": null,
+      "home_pitcher": "Griffin Jax",
       "label": "World Series Game 4",
       "game_type": "W"
     }
