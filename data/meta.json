@@ -1,18 +1,18 @@
 {
   "slate_date": "2026-10-27",
   "preview": false,
-  "rows_scored": 13,
-  "updated_at": "2026-10-27T19:57:26+00:00",
-  "lineups_checked_at": "2026-10-27T15:57:25-0400",
+  "rows_scored": 18,
+  "updated_at": "2026-10-27T20:41:50+00:00",
+  "lineups_checked_at": "2026-10-27T16:40:39-0400",
   "games": [
     {
       "game_pk": "849803",
       "game": "Milwaukee Brewers @ Tampa Bay Rays",
       "start": "2026-10-28T00:00:00Z",
       "state": "Preview",
-      "away_status": "projected",
-      "home_status": "projected",
-      "away_pitcher": null,
+      "away_status": "confirmed",
+      "home_status": "confirmed",
+      "away_pitcher": "Dustin May",
       "home_pitcher": "Griffin Jax",
       "label": "World Series Game 4",
       "game_type": "W"
