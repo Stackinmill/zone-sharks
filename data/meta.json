@@ -1,9 +1,9 @@
 {
   "slate_date": "2026-10-28",
   "preview": false,
-  "rows_scored": 26,
-  "updated_at": "2026-10-28T19:30:13+00:00",
-  "lineups_checked_at": "2026-10-28T15:28:02-0400",
+  "rows_scored": 21,
+  "updated_at": "2026-10-28T20:19:01+00:00",
+  "lineups_checked_at": "2026-10-28T16:18:49-0400",
   "games": [
     {
       "game_pk": "849799",
@@ -11,7 +11,7 @@
       "start": "2026-10-29T00:00:00Z",
       "state": "Preview",
       "away_status": "projected",
-      "home_status": "projected",
+      "home_status": "confirmed",
       "away_pitcher": "Jacob Misiorowski",
       "home_pitcher": "Drew Rasmussen",
       "label": "World Series Game 5",
