@@ -1,9 +1,9 @@
 {
   "slate_date": "2026-10-28",
-  "preview": true,
-  "rows_scored": 0,
-  "updated_at": "2026-10-28T01:35:28+00:00",
-  "lineups_checked_at": "2026-10-27T21:35:27-0400",
+  "preview": false,
+  "rows_scored": 13,
+  "updated_at": "2026-10-28T14:47:02+00:00",
+  "lineups_checked_at": "2026-10-28T10:43:52-0400",
   "games": [
     {
       "game_pk": "849799",
@@ -12,7 +12,7 @@
       "state": "Preview",
       "away_status": "projected",
       "home_status": "projected",
-      "away_pitcher": null,
+      "away_pitcher": "Jacob Misiorowski",
       "home_pitcher": null,
       "label": "World Series Game 5",
       "game_type": "W"
