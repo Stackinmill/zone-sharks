@@ -1,20 +1,20 @@
 {
-  "slate_date": "2026-10-28",
-  "preview": false,
-  "rows_scored": 17,
-  "updated_at": "2026-10-28T23:13:17+00:00",
-  "lineups_checked_at": "2026-10-28T19:13:17-0400",
+  "slate_date": "2026-10-30",
+  "preview": true,
+  "rows_scored": 0,
+  "updated_at": "2026-10-28T23:55:36+00:00",
+  "lineups_checked_at": "2026-10-28T19:55:31-0400",
   "games": [
     {
-      "game_pk": "849799",
-      "game": "Milwaukee Brewers @ Tampa Bay Rays",
-      "start": "2026-10-29T00:00:00Z",
+      "game_pk": "849801",
+      "game": "Tampa Bay Rays @ Milwaukee Brewers",
+      "start": "2026-10-31T00:00:00Z",
       "state": "Preview",
-      "away_status": "confirmed",
-      "home_status": "confirmed",
-      "away_pitcher": "Jacob Misiorowski",
-      "home_pitcher": "Drew Rasmussen",
-      "label": "World Series Game 5",
+      "away_status": "projected",
+      "home_status": "projected",
+      "away_pitcher": null,
+      "home_pitcher": null,
+      "label": "World Series Game 6",
       "game_type": "W"
     }
   ]
