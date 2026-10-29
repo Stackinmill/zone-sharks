@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-29T00:56:46+00:00",
+  "generated_at": "2026-10-29T14:46:04+00:00",
   "start_date": "2026-08-03",
   "end_date": "2026-10-28",
-  "graded_through": "2026-10-27",
+  "graded_through": "2026-10-28",
   "tiers": [
     {
       "tier": "Megalodon",
@@ -14,21 +14,21 @@
     {
       "tier": "Great White",
       "total_picks": 313,
-      "matchups_occurred": 251,
+      "matchups_occurred": 253,
       "had_hr": 28,
       "hit_predicted_band": 17
     },
     {
       "tier": "Hammerhead",
       "total_picks": 2478,
-      "matchups_occurred": 1992,
+      "matchups_occurred": 1999,
       "had_hr": 198,
       "hit_predicted_band": 107
     },
     {
       "tier": "Secondary",
       "total_picks": 9159,
-      "matchups_occurred": 6719,
+      "matchups_occurred": 6727,
       "had_hr": 473,
       "hit_predicted_band": 234
     }

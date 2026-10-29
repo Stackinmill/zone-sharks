@@ -1,21 +1,8 @@
 {
-  "slate_date": "2026-10-30",
-  "preview": true,
+  "slate_date": "2026-10-29",
+  "preview": false,
   "rows_scored": 0,
-  "updated_at": "2026-10-29T00:56:46+00:00",
-  "lineups_checked_at": "2026-10-28T20:56:45-0400",
-  "games": [
-    {
-      "game_pk": "849801",
-      "game": "Tampa Bay Rays @ Milwaukee Brewers",
-      "start": "2026-10-31T00:00:00Z",
-      "state": "Preview",
-      "away_status": "projected",
-      "home_status": "projected",
-      "away_pitcher": null,
-      "home_pitcher": null,
-      "label": "World Series Game 6",
-      "game_type": "W"
-    }
-  ]
+  "updated_at": "2026-10-29T14:46:04+00:00",
+  "lineups_checked_at": "2026-10-29T10:45:09-0400",
+  "games": []
 }
